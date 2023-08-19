@@ -1,3 +1,4 @@
+#cr: nattapon
 import random
 import subprocess
 import time
