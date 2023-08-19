@@ -5,12 +5,12 @@
 
 int main() {
     int n, i;
-    unsigned int sum = 0,*suml;
-    unsigned *input;
+    int sum = 0;
+    int *input;
     int threads_num = omp_get_max_threads();
     omp_set_num_threads(threads_num);
     scanf("%d", &n);
-    input = (unsigned *) malloc(n * sizeof(unsigned));
+    input = (int *) malloc(n * sizeof(int));
     for (i = 0; i < n; i++) {
         scanf("%u", &input[i]);
     }
