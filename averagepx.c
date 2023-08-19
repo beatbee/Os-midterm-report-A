@@ -11,7 +11,6 @@ int main() {
     omp_set_num_threads(threads_num);
     scanf("%d", &n);
     input = (unsigned *) malloc(n * sizeof(unsigned));
-    suml = (unsigned int *) malloc(threads_num * sizeof(unsigned int));
     for (i = 0; i < n; i++) {
         scanf("%u", &input[i]);
     }
@@ -22,6 +21,5 @@ int main() {
     
     printf("%u", sum/n); 
     free(input);
-    free(suml);
     return 0;
 }
